@@ -1,7 +1,9 @@
-const addAnchor = document.querySelector("a")
+const grandParent = document.querySelector("#grand-parent")
 
-const link = addEventListener("click", (e) => {
-  e.preventDefault()
+grandParent.style.color = "red"
 
-  console.log("Prevented the Default")
-})
+grandParent.children[0].style.color = "purple"
+
+grandParent.children[0].children[0].style.color = "blue"
+
+grandParent.children[1].style.color = "green"
