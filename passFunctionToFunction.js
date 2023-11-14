@@ -1,43 +1,43 @@
-// Passing a function to another function and calling the original function with a value.
-function printVariable(variable) {
-  console.log(variable)
-}
+// // Passing a function to another function and calling the original function with a value.
+// function printVariable(variable) {
+//   console.log(variable)
+// }
 
-function func(x) {
-  x("hello world")
-}
+// function func(x) {
+//   x("hello world")
+// }
 
-func(printVariable)
+// func(printVariable)
 
-printVariable("Hi")
+// printVariable("Hi")
 
-// Passing a function to another function then passing in values.
-function sumCallback(a, b, callback) {
-  callback(a + b)
-}
+// // Passing a function to another function then passing in values.
+// function sumCallback(a, b, callback) {
+//   callback(a + b)
+// }
 
-function handleSum(sum) {
-  console.log(sum)
-}
+// function handleSum(sum) {
+//   console.log(sum)
+// }
 
-sumCallback(1, 2, handleSum)
+// sumCallback(1, 2, handleSum)
 
-// Passing a function to another function and appending a value to the passed in function in order to append this value to the passed in variable.
-function printVariable(variable) {
-  console.log(variable)
-}
+// // Passing a function to another function and appending a value to the passed in function in order to append this value to the passed in variable.
+// function printVariable(variable) {
+//   console.log(variable)
+// }
 
-function nameFunction(name, callback) {
-  callback("Hello " + name)
-}
+// function nameFunction(name, callback) {
+//   callback("Hello " + name)
+// }
 
-nameFunction("Angi", printVariable)
+// nameFunction("Angi", printVariable)
 
-// Can also pass in the actual traditional function() like this.
-function nameFunction(name, callback) {
-  callback("Hello " + name)
-}
+// // Can also pass in the actual traditional function() like this.
+// function nameFunction(name, callback) {
+//   callback("Hello " + name)
+// }
 
-nameFunction("Angi", function (variable) {
-  console.log(variable)
-})
+// nameFunction("Angi", function (variable) {
+//   console.log(variable)
+// })

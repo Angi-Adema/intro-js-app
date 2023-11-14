@@ -1,4 +1,7 @@
-const a = "Angi"
-const b = "Adema"
+const addAnchor = document.querySelector("a")
 
-console.log(`${a} ${b}`)
+const link = addEventListener("click", (e) => {
+  e.preventDefault()
+
+  console.log("Prevented the Default")
+})
