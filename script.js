@@ -1,20 +1,29 @@
-const number = 9
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-switch (number) {
-  case 0:
-    console.log("it is zero")
-    break
-  case 1:
-  case 2:
-    console.log("it is small")
-    break
-  case 3:
-  case 4:
-    console.log("it is medium")
-    break
-  case 5:
-    console.log("it is large")
-    break
-  default:
-    console.log("try again")
+// array.forEach((index) => {
+//   console.log(index * 2)
+// })
+
+// for (let i = 0; i <= 10; i++) {
+//   if (i === 5) {
+//     break
+//   }
+//   console.log(i)
+// }
+
+const person = {
+  name: "Kyle",
+  friend: {
+    name: "Joe",
+    friend: {
+      name: "Sally",
+    },
+  },
+}
+
+let currentPerson = person
+
+while (currentPerson.friend != null) {
+  currentPerson = currentPerson.friend
+  console.log(currentPerson.name)
 }
