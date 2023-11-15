@@ -1,5 +1,5 @@
 // function sumNumbersBelow(number) {
-//   if (number <= 0) return 0
+//   if (number <= 0) return 0    // Be sure to add this condition to avoid an infanite loop.
 //   return number + sumNumbersBelow(number - 1)
 // }
 
@@ -14,3 +14,23 @@
 // 2+2-1 or 2 + "1"
 
 // 5 + 4 + 3 + 2 + 1 = 15
+
+// const person = {
+//       name: "Kyle",
+//       friend: {
+//         name: "Joe",
+//         friend: {
+//           name: "Sally",
+//         },
+//       },
+//     }
+
+//     let currentPerson = person
+
+//     function printNames(currentPerson) {
+//       if (currentPerson == null) return
+//       console.log(currentPerson.name)
+//       printNames(currentPerson.friend)
+//     }
+
+//     printNames(person)
