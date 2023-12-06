@@ -41,3 +41,36 @@
 //   console.log("clicked")
 //   console.log(e)
 // })
+
+// function getValueWithDelay(value, delay) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(value)
+//     }, delay)
+//   })
+// }
+
+// function getValueWithDelayError(value, delay) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       reject("Error")
+//     }, delay)
+//   })
+// }
+
+// async function newFunction() {
+//   try {
+//     const value1 = await getValueWithDelay("something", 250)
+//     console.log(value1)
+//     const value2 = await getValueWithDelay("somethingElse", 250)
+//     console.log(value2)
+//     const value3 = await getValueWithDelayError("flowers", 250)
+//     console.log(value3)
+//   } catch (error) {
+//     console.error(error)
+//   } finally {
+//     console.log("finally")
+//   }
+// }
+
+// newFunction()
